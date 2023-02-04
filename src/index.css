@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  object-fit: contain;
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.feedback-card {
+  width: 100%;
+  min-height: 180px;
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  /* background: #272727 */
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.feedback-card:hover {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray {
+  background-color: rgba(244, 246, 249, 1);
+}
+
+.bg-image {
+  background-image: url(./assets/bgPeople.svg);
+  background-repeat: no-repeat !important;
+  background-position: right top;
+}
+
+.gradient__blue {
+  background: linear-gradient(
+    95.31deg,
+    #A659FF -28.73%,
+    #7178FF 23.23%,
+    #2148FF 62.74%,
+    #FF3517 111.77%
+  );
+}
+
+.gradient__gray {
+  background: linear-gradient(
+    359.8deg,
+    #F4F6F9 58.06%,
+    rgba(244, 246, 249, 0) 102.13%
+  );
+  /* transform: rotate(-180deg); */
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
